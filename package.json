@@ -1,0 +1,15 @@
+{
+  "name": "3d-schule",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/dev-server.mjs",
+    "dev": "node scripts/dev-server.mjs",
+    "build": "node scripts/build.mjs",
+    "check": "node --check src/main.js && node --check scripts/build.mjs && node --check scripts/dev-server.mjs"
+  },
+  "stackblitz": {
+    "startCommand": "npm run dev"
+  }
+}

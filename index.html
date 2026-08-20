@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#9fd8ff" />
+    <title>3D Schule – technisches Grundgerüst</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <main id="app" aria-label="Interaktive 3D-Testszene einer Schule">
+      <div class="scene-label">
+        <strong>3D Schule</strong>
+        <span>Testszene: drehen, zoomen und bewegen mit Maus oder Touch</span>
+      </div>
+    </main>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.179.1/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
